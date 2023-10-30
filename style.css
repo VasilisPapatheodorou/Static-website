@@ -1,10 +1,19 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    
 }
 
-.header {
+@font-face { /*the font of the site*/
+    font-family: font;
+    src: url(fonts/Carlene.otf) format(truetype);
+}
+
+body{
+    font-family: font;
+}
+
+.header {  /*the background*/
     min-height: 97vh;
     width: 100%;
     background: url(images/background.jpg);
@@ -12,11 +21,11 @@
     background-size: 100% 100%;
 }
 
-.icon{
+.icon{ /*the icon of the site*/
     position: absolute;
 }
 
-.header::before{
+.header::before{  /*NA TO ALLAKSW*/
     content: "";
     display: block;
     position: relative;
@@ -24,12 +33,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(59, 59, 59, 0.5); /* Change the color and opacity as needed */
+    background-color: rgba(59, 59, 59, 0.5);
 }
 
 
-/*----------------------NAVIGATION---------------------*/
-nav{
+nav{ /*the menu in the right corner*/
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
@@ -40,25 +48,26 @@ nav img{
     width: 150px;
 }
 
+
 .nav-links{
     flex: 1;
     text-align: right;
 }
 
-.nav-links ul li{
+.nav-links ul li{ /*sets the position of the menu to be horizontally*/
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
 
-.nav-links ul li a{ /*ANCHOR*/
+.nav-links ul li a{ /*changes the color and the size of the categories in menu*/
     color: #000000;
     text-decoration: none;
     font-size: 13px;
 }
 
-.nav-links ul li::after{
+.nav-links ul li::after{ /*underline the categories of the menu*/
     content: "";
     width: 0%;
     height: 2px;
@@ -71,9 +80,9 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
-/*----------------------/NAVIGATION---------------------*/
-/*----------------------MAIN TEXT---------------------*/
-.text-box{
+
+
+.text-box{ /*the box in the centre of the site*/
     width: 90%;
     color: #fd8700;
     position: absolute;
@@ -84,33 +93,17 @@ nav img{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.text-box h1{
+.text-box h1{ /*the size of the letters*/
     font-size: 62px;
 }
 
-.text-box p{
+.text-box p{ /*the size of the letters*/
     margin: 10px 0 40px;
     font-size: 14px;
 }
-/*----------------------/MAIN TEXT---------------------*/
-/*----------------------FORM---------------------*/
-.form{
-    position: fixed;
-    right: 40%;
-    top: 45%;
-    text-decoration: none;
-    color: #fd8700;
-    padding: 12px 34px;
-    font-size: 33px;
-    background-color: rgba(0, 0, 0, 0.5);
 
-}
-.form:focus{
-    border: 3px solid #555;
-}
-/*----------------------/FORM---------------------*/
-/*----------------------ABOUT US---------------------*/
-.info{
+
+.info{  /*info for the about us*/
     position: absolute;
     top: 20%;
     left: 20%;
@@ -120,7 +113,7 @@ nav img{
     
 }
 
-.person{
+.person{ /*details about box in about us*/
     color: black;
     border-radius: 25px;
     background:  rgba(234, 227, 227, 0.5);
@@ -134,8 +127,7 @@ nav img{
     align-items: center;
 }
 
-/*----------------------/ABOUT US---------------------*/
-.footer{
+.footer{ /*the position and the details of the footer*/
     position: relative;
     left: 0;
     bottom: 0;
@@ -145,29 +137,14 @@ nav img{
     text-align: center;
 }
 
-#categories {
-    padding: 150px 40px 150px;
-    color: #000000;
-    
-}
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.categories-col-2 {
-    flex-basis: 60%;
-}
-
-.tab-titles {
+.tab-titles { /*the position of the images in categories*/
     display: flex;
     margin: -80px 0 40px;
     
 }
 
-.tab-links {
+.tab-links { /*the distances between the categories*/
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -175,8 +152,8 @@ nav img{
     position: relative;
 }
 
-/*--------------------CATEGORIES--------------------*/
-.categories-menu{
+
+.categories-menu{ /*the board with the details in categories*/
     display: flex;
     width: 46%;
     height: 30%;
@@ -189,12 +166,8 @@ nav img{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.tab-titles{
-    flex: 1;
-    text-align: left;
-}
 
-.tab-titles ul li{
+.tab-titles ul li{ /*justify the position and the color of the categories*/
     list-style: none;
     display: inline-block;
     padding: 8px 20px;
@@ -221,7 +194,7 @@ nav img{
 
 .tab-titles ul li ul.dropdown li{
     display: block;
-    align-items:flex;
+   
 }
 
 .tab-titles ul li ul.dropdown{
@@ -242,9 +215,7 @@ nav img{
     width: 40px;
 }
 
-/*--------------------/CATEGORIES--------------------*/
-
-/*----------------------social----------------------*/
+/*-------style of the social icons-------*/
 .icon-bar {
     position: absolute;
     top: 94%;
@@ -254,7 +225,7 @@ nav img{
     display: flex;
   }
 
-  /* Style the icon bar links */
+ 
 .icon-bar a {
     display: block;
     text-align: center;
@@ -264,7 +235,7 @@ nav img{
     font-size: 20px;
   }
   
-  /* Style the social media icons with color, if you want */
+  
   .icon-bar a:hover {
     background-color: #000;
   }
@@ -296,7 +267,7 @@ nav img{
 
 /*------HOME-RENTALS------*/
 
-.heading {
+.heading { 
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -317,7 +288,7 @@ nav img{
     padding: 0 50px;
 }
 
-.properties-container .box {
+.properties-container .box {  /*details of the box*/
     background:#d6d6d6;
     padding: 15px;
     border-radius: 1rem;
@@ -330,7 +301,7 @@ nav img{
     transition: 0.5s;
 }
 
-.properties-container .box img {
+.properties-container .box img { /*details of the image inside the box*/
     border-radius: 1rem;
     height: 220px;
     object-fit: cover;
@@ -379,7 +350,7 @@ nav img{
 
 /*-------HOME DETAILS------*/
 
-.details {
+.details { /*one box next to the other*/
     display: flex;
     justify-content: space-between;
     align-items: center;
