@@ -25,7 +25,7 @@ body{
 }
 
 .icon{ /*the icon of the site*/
-    position:fixed;
+    position:relative;
 }
 
 
@@ -444,7 +444,7 @@ input[type="checkbox"] {
 }
 
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:426px) {
     .header {
         background-image: url(images/phone-background.jpg);  /*NA TO ALLAKSW KAI NA XRHSIMOPOIHSW srcset*/
     }
@@ -473,6 +473,7 @@ input[type="checkbox"] {
     .icon {
         margin-left: -50px;
         margin-top: -15px;
+
     }
 
     .text-box {
@@ -503,6 +504,7 @@ input[type="checkbox"] {
         width: 100%;
 
   }
+}
 
 
 @media only screen and (max-width:820px) {
