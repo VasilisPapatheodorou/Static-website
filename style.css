@@ -25,7 +25,7 @@ body{
 }
 
 .icon{ /*the icon of the site*/
-    position:relative;
+    position:absolute;
 }
 
 
